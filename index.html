@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo by fx
+    </title>
+</head>
+
+<body>
+    <h1>This is a Todo List</h1>
+    <input type="text" id="filter-text" placeholder="Filter Todo">
+    <label>
+        Hide Completed<input type="checkbox" id="hide-completed">
+    </label>
+
+    <h2>Todos</h2>
+    <hr>
+    <div id="todo-area">
+    </div>
+    <hr>
+    <form id="create-todo">
+        <input type="text" id="create-todo-text" name="text" placeholder="Create Todo">
+        <button id="create-todo-button">Create Todo</button>
+    </form>
+    <hr>
+    <button id="remove-all">Remove All Todos</button>
+    <script type="module">
+        import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+        window.uuidv4 = uuidv4
+    </script>
+    <script src="todo.js"></script>
+</body>
+
+</html>
